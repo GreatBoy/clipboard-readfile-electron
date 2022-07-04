@@ -1,4 +1,8 @@
 {
+	'variables': {
+		'module_name': '<!(node -p "require(\'./package.json\').binary.module_name")',
+		'module_path': '<!(node -p "require(\'./package.json\').binary.module_path")',
+	},
 	"targets": [{
 		"target_name": "binding",
 		"sources": [
